@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "iPhone 15",
+      "description": "Smartphone Apple.",
+      "price": 850,
+      "available": true,
+      "image": "https://placehold.co/400x250/blue/white"
+    },
+    {
+      "name": "Ordinateur Asus",
+      "description": "portable performant",
+      "price": "6",
+      "id": "9lOn0oC440c",
+      "available": false,
+      "image": "https://placehold.co/400x250/blue/white"
+    },
+    {
+      "name": "Clavier Logitech",
+      "description": "test",
+      "price": "500",
+      "id": "46_T9DNbVrM",
+      "available": true,
+      "image": "https://placehold.co/400x250/blue/white"
+    },
+    {
+      "name": "Ordinateur Dell",
+      "description": "test",
+      "price": "40",
+      "available": false,
+      "image": "https://placehold.co/400x250/blue/white",
+      "id": "S28nGFWrXzQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
