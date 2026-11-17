@@ -6,6 +6,8 @@ import { useAuth } from '../hooks/useAuth'
 function Navbar() {
 
 const {user, logout} = useAuth()
+  
+
 
 
   return (
