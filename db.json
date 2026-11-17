@@ -1,37 +1,214 @@
+
 {
-  "products": [
+
+  "offres": [
+
     {
+
+      "id": "1",
+
+      "titre": "Développeur Full Stack",
+
+      "entreprise": "Capgemini",
+
+      "localisation": "Bordeaux",
+
+      "type": "CDI",
+
+      "domaine": "Informatique",
+
+      "description": "Développement et maintenance d'applications web avec React et Node.js.",
+
+      "competences": ["React", "Node.js", "JavaScript", "SQL"],
+
+      "salaire": "35 000 - 42 000 € / an",
+
+      "datePublication": "2026-11-10",
+
+      "dateLimite": "2026-12-10",
+
+      "teletravail": true,
+
+      "niveauEtude": "Bac+3",
+
+      "experience": "Débutant accepté",
+
+      "statut": "active"
+
+    },
+
+    {
+
       "id": "2",
-      "name": "iPhone 15",
-      "description": "Smartphone Apple.",
-      "price": 850,
-      "available": true,
-      "image": "https://placehold.co/400x250/blue/white"
+
+      "titre": "Data Analyst",
+
+      "entreprise": "Sopra Steria",
+
+      "localisation": "Bordeaux",
+
+      "type": "Alternance",
+
+      "domaine": "Data",
+
+      "description": "Analyse de données, création de tableaux de bord et exploitation de bases de données.",
+
+      "competences": ["Python", "SQL", "Power BI", "Excel"],
+
+      "salaire": "Selon âge et niveau d'études",
+
+      "datePublication": "2026-11-12",
+
+      "dateLimite": "2026-12-20",
+
+      "teletravail": true,
+
+      "niveauEtude": "Bac+3",
+
+      "experience": "Aucune expérience requise",
+
+      "statut": "active"
+
     },
+
     {
-      "name": "Ordinateur Asus",
-      "description": "portable performant",
-      "price": "6",
-      "id": "9lOn0oC440c",
-      "available": false,
-      "image": "https://placehold.co/400x250/blue/white"
+
+      "id": "3",
+
+      "titre": "Développeur Java",
+
+      "entreprise": "Thales",
+
+      "localisation": "Mérignac",
+
+      "type": "Stage",
+
+      "domaine": "Informatique",
+
+      "description": "Participation au développement d'applications backend et aux tests logiciels.",
+
+      "competences": ["Java", "Spring Boot", "Git", "REST API"],
+
+      "salaire": "700 € / mois",
+
+      "datePublication": "2026-11-08",
+
+      "dateLimite": "2026-12-01",
+
+      "teletravail": false,
+
+      "niveauEtude": "Bac+3 à Bac+5",
+
+      "experience": "Débutant accepté",
+
+      "statut": "active"
+
     },
+
     {
-      "name": "Clavier Logitech",
-      "description": "test",
-      "price": "500",
-      "id": "46_T9DNbVrM",
-      "available": true,
-      "image": "https://placehold.co/400x250/blue/white"
+
+      "id": "4",
+
+      "titre": "UX/UI Designer",
+
+      "entreprise": "Ubisoft",
+
+      "localisation": "Bordeaux",
+
+      "type": "CDI",
+
+      "domaine": "Design",
+
+      "description": "Conception d'interfaces utilisateur et amélioration de l'expérience utilisateur.",
+
+      "competences": ["Figma", "UI Design", "UX Research", "Prototypage"],
+
+      "salaire": "32 000 - 38 000 € / an",
+
+      "datePublication": "2026-11-05",
+
+      "dateLimite": "2026-12-15",
+
+      "teletravail": true,
+
+      "niveauEtude": "Bac+3",
+
+      "experience": "1 à 2 ans",
+
+      "statut": "active"
+
     },
+
     {
-      "name": "Ordinateur Dell",
-      "description": "test",
-      "price": "40",
-      "available": false,
-      "image": "https://placehold.co/400x250/blue/white",
-      "id": "S28nGFWrXzQ"
+
+      "id": "5",
+
+      "titre": "Administrateur systèmes et réseaux",
+
+      "entreprise": "Orange",
+
+      "localisation": "Pessac",
+
+      "type": "CDI",
+
+      "domaine": "Réseaux",
+
+      "description": "Administration des serveurs, supervision des infrastructures et gestion des incidents.",
+
+      "competences": ["Linux", "Windows Server", "Réseaux", "Docker"],
+
+      "salaire": "30 000 - 36 000 € / an",
+
+      "datePublication": "2026-11-14",
+
+      "dateLimite": "2026-12-30",
+
+      "teletravail": false,
+
+      "niveauEtude": "Bac+2",
+
+      "experience": "2 ans",
+
+      "statut": "active"
+
+    },
+
+    {
+
+      "id": "6",
+
+      "titre": "Développeur Frontend React",
+
+      "entreprise": "Dassault Systèmes",
+
+      "localisation": "Bordeaux",
+
+      "type": "Alternance",
+
+      "domaine": "Informatique",
+
+      "description": "Développement d'interfaces web modernes et responsives.",
+
+      "competences": ["React", "TypeScript", "CSS", "Git"],
+
+      "salaire": "Selon profil",
+
+      "datePublication": "2026-11-15",
+
+      "dateLimite": "2027-01-10",
+
+      "teletravail": true,
+
+      "niveauEtude": "Bac+2",
+
+      "experience": "Débutant accepté",
+
+      "statut": "active"
+
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+
+  ]
+
 }
+
+ 
