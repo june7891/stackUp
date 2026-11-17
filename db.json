@@ -39,7 +39,7 @@
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-12",
       "dateLimite": "2026-12-20",
-        "teletravail": "Oui",
+      "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "Aucune expérience requise",
       "active": true
@@ -61,7 +61,7 @@
       "salaire": "700 € / mois",
       "datePublication": "2026-11-08",
       "dateLimite": "2026-12-01",
-        "teletravail": "Non",
+      "teletravail": "Non",
       "niveauEtude": "Bac+3 à Bac+5",
       "experience": "Débutant accepté",
       "active": false
@@ -86,7 +86,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "1 à 2 ans",
-       "active": true
+      "active": true
     },
     {
       "id": "5",
@@ -105,10 +105,10 @@
       "salaire": "30 000 - 36 000 € / an",
       "datePublication": "2026-11-14",
       "dateLimite": "2026-12-30",
-       "teletravail": "1 jour/semaine",
+      "teletravail": "1 jour/semaine",
       "niveauEtude": "Bac+2",
       "experience": "2 ans",
-       "active": true
+      "active": true
     },
     {
       "id": "6",
@@ -130,7 +130,15 @@
       "teletravail": "Non",
       "niveauEtude": "Bac+2",
       "experience": "Débutant accepté",
-       "active": false
+      "active": false
+    }
+  ],
+  "users": [
+    {
+      "username": "tomajune",
+      "email": "toma.june@gmail.com",
+      "password": "&é\"'(-è_çà&é",
+      "id": "ZxXJWG9OgTA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
