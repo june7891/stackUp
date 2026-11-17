@@ -3,9 +3,10 @@ import {Routes, Route, Navigate} from "react-router"
 import ProductPage from './pages/ProductPage'
 import AddProductPage from './pages/AddProductPage'
 import LoginPage from "./pages/LoginPage"
-import Navbar from "./components/Navbar"
+// import Navbar from "./components/Navbar"
 import ProductDetailsPage from "./pages/ProductDetailsPage"
 import ProtectedRoute from "./components/ProtectedRoute"
+import Navbar from "./components/Navbar/Navbar";
 
 
 
