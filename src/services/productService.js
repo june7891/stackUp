@@ -1,66 +1,57 @@
-const API_URL = "http://localhost:3000/products"
+const API_URL = "http://localhost:3000/offres";
 
+export async function getOffres() {
+  const response = await fetch(API_URL);
 
+  if (!response.ok) {
+    throw new Error("Erreur lors de la récupération des offres");
+  }
 
-
-export async function getProducts() {
-   const response = await fetch(API_URL)
-
-
-   if(!response.ok) {
-    throw new Error('Erreur lors de la récupération des produits')
-   }
-
-  return await response.json()
+  return await response.json();
 }
 
-
-export async function addProduct(product) {
+export async function addOffre(offre) {
   const response = await fetch(API_URL, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(product)
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(offre),
+  });
 
-  })
-
-  if(!response.ok){
-    throw new Error("Erreur lors de l'ajout")
+  if (!response.ok) {
+    throw new Error("Erreur lors de l'ajout");
   }
-  return await response.json()
+  return await response.json();
 }
 
-
-export async function getProductById(id) {
-  const response = await fetch(`${API_URL}/${id}`)
-  if(!response.ok) {
-    throw new Error('Produit introuvable')
+export async function getOffreById(id) {
+  const response = await fetch(`${API_URL}/${id}`);
+  if (!response.ok) {
+    throw new Error("Offre introuvable");
   }
-  return await response.json()
+  return await response.json();
 }
 
-
-export async function deleteProduct(id) {
+export async function deleteOffre(id) {
   const response = await fetch(`${API_URL}/${id}`, {
-    method: 'DELETE'
-  })
+    method: "DELETE",
+  });
 
-  if(!response.ok){
-    throw new Error('Erreur de suppression')
+  if (!response.ok) {
+    throw new Error("Erreur de suppression");
   }
 }
 
+export async function updateAvailability(id, newStatus) {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ available: !newStatus }),
+  });
 
-export async function updateAvailability(id, newStatus){
-        const response = await fetch(`${API_URL}/${id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-             body: JSON.stringify({"available": !newStatus})
-        })
-
-          if(!response.ok){
-    throw new Error("Erreur lors de la mise à jour")
+  if (!response.ok) {
+    throw new Error("Erreur lors de la mise à jour");
   }
-  return await response.json()
-    }
+  return await response.json();
+}
