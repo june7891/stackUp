@@ -4,30 +4,28 @@ import { Link } from 'react-router'
 function OffreCard({offre}) {
   return (
     <>
-         <div className="col-4 mt-3" key={offre.id}>
+         <div className="col-12 col-md-6 col-lg-4 mt-3" key={offre.id}>
 
 
-          <div className='row card p-3 shadow-sm'>
-            <div className='col-sm-6'>
-              <div className='card-body'>
-            <h1 className='card-title'>{offre.title}</h1>
-            <h2 className='fw-bold text-secondary'>{offre.entreprise}</h2>
-            <p className= 'card-subtitle mb-2 text-muted'>{offre.localisation}</p>
-            <ul className='list-inline'>
-            <li className='list-inline'>{offre.type}</li>
-            <li className='list-inline'>{offre.domaine}</li>
-            <li className='list-inline'>{offre.competences}</li> 
-            <li className='list-inline'>{offre.salaire} €</li>  
-            <li className='list-inline'>{offre.teletravail}</li>
-            <li className='list-inline'>{offre.niveauEtude}</li>
+          <div className='card h-100 p-3 border-0 shadow-sm'>
+            <div className='card-body d-flex flex-column'>
+            <h1 className='card-title fs-5 fw-bold mb-2'>{offre.titre}</h1>
+            <h2 className='fs-6 fw-semibold text-secondary mb-2'>{offre.entreprise}</h2>
+            <p className='card-subtitle mb-3 text-body-secondary'>{offre.localisation}</p>
+            <ul className='list-unstyled d-flex flex-wrap gap-2 mb-4'>
+            <li className='badge text-bg-light border fw-normal'>{offre.type}</li>
+            <li className='badge text-bg-light border fw-normal'>{offre.domaine}</li>
+            <li className='badge text-bg-light border fw-normal'>{offre.competences}</li>
+            <li className='badge text-bg-light border fw-normal'>{offre.salaire} €</li>
+            <li className='badge text-bg-light border fw-normal'>{offre.teletravail}</li>
+            <li className='badge text-bg-light border fw-normal'>{offre.niveauEtude}</li>
             </ul>
             
            
            
            
-            <Link to={`/offre/${offre.id}`} className='btn btn-dark'>Voir les details</Link>
+            <Link to={`/offre/${offre.id}`} className='btn btn-dark mt-auto align-self-start'>Voir les details</Link>
             </div>
-            </div> 
           </div>
         </div>
     </>
