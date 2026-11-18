@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router";
 import { useAuth} from "../../hooks/useAuth"
 import "./Navbar.css";
+import logo from "../../assets/logo.webp"
 
 
 function Navbar() {
@@ -13,7 +14,7 @@ function Navbar() {
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img
-            src="src\assets\stackup-logo-navbar.png"
+            src={logo}
             alt="StackUp"
             className="stackup-logo"
           />
