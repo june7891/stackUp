@@ -48,11 +48,6 @@ function OffreDetailsPage() {
     }
   }
 
-  function handleUpdate() {
-    console.log("Bouton modifier cliqué");
-    // À relier à ta page de modification
-  }
-
   if (error) {
     return (
       <main className="offre-details-page">
@@ -173,7 +168,7 @@ function OffreDetailsPage() {
                 <button
                   type="button"
                   className="offre-action-btn offre-btn-edit"
-                  onClick={handleUpdate}
+                  onClick={() => navigate(`/offre/modifier/${id}`)}
                 >
                   Modifier
                 </button>
