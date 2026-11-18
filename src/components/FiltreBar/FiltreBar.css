@@ -1,0 +1,51 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  width: min(100%, 820px);
+  margin: 0 auto 32px;
+}
+
+.filter-bar select {
+  flex: 1 1 240px;
+  min-width: 0;
+  min-height: 56px;
+  padding: 12px 16px;
+  border: 1px solid rgba(67, 230, 194, 0.3);
+  border-radius: 14px;
+  background-color: #152A3B;
+  color: #E2E8F0;
+  color-scheme: dark;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.filter-bar select:hover {
+  border-color: rgba(67, 230, 194, 0.65);
+  background-color: #193247;
+}
+
+.filter-bar select:focus {
+  border-color: #43E6C2;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(67, 230, 194, 0.18);
+}
+
+.filter-bar option {
+  background-color: #0B1220;
+  color: #E2E8F0;
+}
+
+@media (max-width: 576px) {
+  .filter-bar {
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+
+  .filter-bar select {
+    flex-basis: 100%;
+    min-height: 52px;
+  }
+}

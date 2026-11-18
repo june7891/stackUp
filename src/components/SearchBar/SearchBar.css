@@ -1,0 +1,75 @@
+.offres-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(100%, 820px);
+  min-height: 66px;
+  margin: 0 auto 34px;
+  padding: 8px 22px;
+  border: 1px solid rgba(67, 230, 194, 0.3);
+  border-radius: 17px;
+  background: #FFFFFF;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.offres-search:hover {
+  border-color: rgba(67, 230, 194, 0.65);
+  transform: translateY(-1px);
+}
+
+.offres-search:focus-within {
+  border-color: #43E6C2;
+  box-shadow: 0 0 0 4px rgba(67, 230, 194, 0.18), 0 14px 36px rgba(0, 0, 0, 0.22);
+}
+
+.offres-search-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #607080;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.offres-search-input.form-control {
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  color: #0B1220;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+.offres-search-input.form-control::placeholder {
+  color: #748196;
+}
+
+.offres-search-input.form-control:focus {
+  border: 0;
+  background: transparent;
+  color: #0B1220;
+  box-shadow: none;
+}
+
+.offres-search-input.form-control::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .offres-search {
+    min-height: 58px;
+    margin-bottom: 26px;
+    padding: 6px 16px;
+    border-radius: 14px;
+  }
+
+  .offres-search-input.form-control {
+    min-height: 42px;
+    font-size: 15px;
+  }
+}
