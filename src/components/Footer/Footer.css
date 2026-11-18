@@ -1,0 +1,140 @@
+
+/* FOOTER STACKUP - COMPACT ET CENTRÉ */
+
+.stackup-footer {
+  background: #0B1220;
+  color: #FFFFFF;
+  padding: 20px 24px 14px;
+  border-top: 1px solid rgba(67, 230, 194, 0.25);
+}
+
+.stackup-footer-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Logo et navigation */
+
+.stackup-footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo */
+
+.stackup-footer-brand {
+  flex: 0 0 200px;
+}
+
+.stackup-footer-brand h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.stackup-footer-brand h2 span {
+  color: #43E6C2;
+}
+
+.stackup-footer-brand p {
+  margin: 4px 0 0;
+  color: #A7B4C8;
+  font-size: 12px;
+}
+
+/* Liens centrés */
+
+.stackup-footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding-right: 100px;
+}
+
+.stackup-footer-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.stackup-footer-links a:hover {
+  color: #43E6C2;
+}
+
+/* Bas du Footer */
+
+.stackup-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stackup-footer-bottom p,
+.stackup-footer-bottom span {
+  margin: 0;
+  font-size: 11px;
+  color: #8493AA;
+}
+
+.stackup-footer-bottom span {
+  color: #43E6C2;
+}
+
+/* Tablette */
+
+@media (max-width: 900px) {
+  .stackup-footer-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .stackup-footer-brand {
+    flex: auto;
+  }
+
+  .stackup-footer-links {
+    padding-right: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .stackup-footer {
+    padding: 18px 55px 16px 16px;
+  }
+
+  .stackup-footer-main {
+    gap: 14px;
+  }
+
+  .stackup-footer-links {
+    gap: 12px 18px;
+  }
+
+  .stackup-footer-links a {
+    font-size: 12px;
+  }
+
+  .stackup-footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}

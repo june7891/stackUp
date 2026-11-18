@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar/Navbar";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import UpdatePage from "./pages/UpdatePage/UpdatePage";
 import CandidatePage from "./pages/CandidatePage/CandidatePage";
+import Footer from "./components/Footer/Footer";
+import BackToTop from "./components/BackToTop/BackToTop";
+import MentionsLegales from "./pages/MentionsLegales/MentionsLegales";
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/offre/modifier/:id" element={<UpdatePage />} />
         <Route path="/candidate/:id" element={<ProtectedRoute><CandidatePage /></ProtectedRoute>} />
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
       </Routes>
+      <BackToTop />
+      <Footer />
     </>
   );
 }
