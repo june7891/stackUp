@@ -19,14 +19,14 @@ function RegisterPage() {
     e.preventDefault();
     setError("");
 
-    // Vérifier les mots de passe
+    // Vérification des mots de passe
     if (password !== confirmPassword) {
       setError("Les mots de passe ne correspondent pas.");
       return;
     }
 
     // Vérifier la longueur du mot de passe
-    if (password.length < 12) {
+    if (password.length < 6) {
       setError("Le mot de passe doit contenir au moins 12 caractères.");
       return;
     }
@@ -119,7 +119,7 @@ function RegisterPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               autoComplete="new-password"
-              minLength={6}
+              minLength={12}
               required
             />
           </div>
