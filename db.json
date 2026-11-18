@@ -20,7 +20,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "Débutant accepté",
-      "statut": true
+      "statut": false
     },
     {
       "id": "2",
@@ -42,29 +42,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "Aucune expérience requise",
-      "active": true
-    },
-    {
-      "id": "3",
-      "titre": "Développeur Java",
-      "entreprise": "Thales",
-      "localisation": "Mérignac",
-      "type": "Stage",
-      "domaine": "Informatique",
-      "description": "Participation au développement d'applications backend et aux tests logiciels.",
-      "competences": [
-        "Java",
-        "Spring Boot",
-        "Git",
-        "REST API"
-      ],
-      "salaire": "700 € / mois",
-      "datePublication": "2026-11-08",
-      "dateLimite": "2026-12-01",
-      "teletravail": "Non",
-      "niveauEtude": "Bac+3 à Bac+5",
-      "experience": "Débutant accepté",
-      "active": false
+      "statut": false
     },
     {
       "id": "4",
@@ -86,7 +64,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "1 à 2 ans",
-      "active": true
+      "statut": false
     },
     {
       "id": "5",
@@ -108,7 +86,7 @@
       "teletravail": "1 jour/semaine",
       "niveauEtude": "Bac+2",
       "experience": "2 ans",
-      "active": true
+      "statut": false
     },
     {
       "id": "6",
@@ -130,7 +108,7 @@
       "teletravail": "Non",
       "niveauEtude": "Bac+2",
       "experience": "Débutant accepté",
-      "active": false
+      "statut": false
     }
   ],
   "users": [
@@ -141,10 +119,18 @@
       "id": "ZxXJWG9OgTA"
     },
     {
-      "username": "wafa",
-      "email": "ex@gmail.com",
-      "password": "1234567890AB",
-      "id": "4a5l_Q-bcNU"
+      "id": "1",
+      "username": "admin",
+      "email": "admin@stackup.fr",
+      "password": "demo-admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "toto",
+      "email": "toto@example.com",
+      "password": "demo-candidat",
+      "role": "candidat"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

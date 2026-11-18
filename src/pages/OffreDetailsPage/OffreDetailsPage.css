@@ -1,0 +1,246 @@
+
+/* PAGE DETAILS OFFRE STACKUP */
+
+.offre-details-page {
+  background-color: #F4F7FA;
+  min-height: calc(100vh - 75px);
+  padding: 40px 20px 70px;
+}
+
+.offre-details-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* RETOUR */
+
+.offre-back {
+  display: inline-flex;
+  align-items: center;
+  color: #138E78;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 25px;
+  transition: color 0.3s ease;
+}
+
+.offre-back:hover {
+  color: #0B1220;
+}
+
+/* CARTE PRINCIPALE */
+
+.offre-details-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6EAF0;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 12px 35px rgba(11, 18, 32, 0.06);
+}
+
+/* EN-TETE */
+
+.offre-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E6EAF0;
+}
+
+.offre-details-title {
+  color: #0B1220;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offre-details-company {
+  color: #64748B;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* STATUT */
+
+.offre-status {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.offre-status.active {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.offre-status.inactive {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+/* SECTIONS */
+
+.offre-section {
+  margin-top: 30px;
+}
+
+.offre-section-title {
+  color: #0B1220;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.offre-description {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+/* INFORMATIONS */
+
+.offre-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.offre-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.offre-info-label {
+  color: #64748B;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.offre-info-value {
+  color: #0B1220;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+/* COMPETENCES */
+
+.offre-competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.offre-competence {
+  background-color: #E8FAF5;
+  color: #137C6A;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* BOUTONS ACTION */
+
+.offre-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #E6EAF0;
+}
+
+.offre-action-btn {
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+              transform 0.2s ease;
+}
+
+.offre-action-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* CHANGER STATUT / POSTULER */
+
+.offre-btn-primary {
+  background-color: #43E6C2;
+  color: #0B1220;
+}
+
+.offre-btn-primary:hover {
+  background-color: #2CC9A7;
+}
+
+/* MODIFIER */
+
+.offre-btn-edit {
+  background-color: #FFFFFF;
+  color: #0B1220;
+  border-color: #CBD5E1;
+}
+
+.offre-btn-edit:hover {
+  background-color: #F4F7FA;
+}
+
+/* SUPPRIMER */
+
+.offre-btn-delete {
+  background-color: #FEF2F2;
+  color: #B91C1C;
+  border-color: #FECACA;
+}
+
+.offre-btn-delete:hover {
+  background-color: #FEE2E2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .offre-details-page {
+    padding: 25px 15px 50px;
+  }
+
+  .offre-details-card {
+    padding: 25px 20px;
+  }
+
+  .offre-details-header {
+    flex-direction: column;
+  }
+
+  .offre-details-title {
+    font-size: 23px;
+  }
+
+  .offre-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .offre-actions {
+    flex-direction: column;
+  }
+
+  .offre-action-btn {
+    width: 100%;
+  }
+}

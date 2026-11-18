@@ -3,10 +3,11 @@ import {Routes, Route, Navigate} from "react-router"
 import OffrePage from './pages/OffrePage/OffrePage'
 import AddOffrePage from './pages/AddOffrePage'
 import LoginPage from "./pages/LoginPage/LoginPage"
-import OffreDetailsPage from "./pages/OffreDetailsPage"
+import OffreDetailsPage from "./pages/OffreDetailsPage/OffreDetailsPage"
 import ProtectedRoute from "./components/ProtectedRoute"
 import Navbar from "./components/Navbar/Navbar";
 import RegisterPage from "./pages/RegisterPage/RegisterPage"
+import CandidatePage from "./pages/CandidatePage/CandidatePage"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
+        <Route path="/candidate/:id" element={<CandidatePage/>}/>
       </Routes>
       
 
