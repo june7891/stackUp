@@ -78,6 +78,7 @@
 .login-card .form-control:focus {
   border-color: #43E6C2;
   background-color: #172F42;
+  color: #F8FAFC !important;
   box-shadow: 0 0 0 4px rgba(67, 230, 194, 0.16);
   outline: none;
 }

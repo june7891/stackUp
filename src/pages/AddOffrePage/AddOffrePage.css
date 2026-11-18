@@ -1,0 +1,350 @@
+
+/* ===== PAGE AJOUT OFFRE ===== */
+
+.add-page {
+  position: relative;
+  isolation: isolate;
+  min-height: calc(100vh - 75px);
+  padding: 48px 20px 64px;
+  background:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(67, 230, 194, 0.14),
+      transparent 34%
+    ),
+    linear-gradient(
+      rgba(67, 230, 194, 0.08),
+      rgba(8, 62, 50, 0.12)
+    ),
+    #0B1220;
+}
+
+/* Conteneur principal */
+
+.add-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ===== EN-TÊTE ===== */
+
+.add-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+  padding: 32px 38px;
+  border: 1px solid rgba(67, 230, 194, 0.28);
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(67, 230, 194, 0.12),
+      transparent 36%
+    ),
+    #0B1220;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.add-hero::before {
+  position: absolute;
+  top: 0;
+  right: 42px;
+  left: 42px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #43E6C2,
+    transparent
+  );
+  content: "";
+}
+
+.add-eyebrow {
+  margin-bottom: 12px;
+  color: #43E6C2;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.add-title {
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.add-title span {
+  color: #43E6C2;
+}
+
+.add-intro {
+  margin: 0;
+  color: #A9B8C9;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* ===== CARTE FORMULAIRE ===== */
+
+.add-form-card {
+  position: relative;
+  overflow: hidden;
+  padding: 42px;
+  border: 1px solid rgba(67, 230, 194, 0.28);
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(67, 230, 194, 0.12),
+      transparent 36%
+    ),
+    #0B1220;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.32);
+}
+
+.add-form-card::before {
+  position: absolute;
+  top: 0;
+  right: 42px;
+  left: 42px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #43E6C2,
+    transparent
+  );
+  content: "";
+}
+
+/* ===== LABELS ===== */
+
+.add-form-card .form-label {
+  margin-bottom: 8px;
+  color: #E2E8F0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===== CHAMPS ===== */
+
+.add-form-card .form-control,
+.add-form-card .form-select {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 15px;
+  border: 1px solid rgba(67, 230, 194, 0.22);
+  border-radius: 10px;
+  background-color: #152A3B;
+  color: #F8FAFC;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Placeholder */
+
+.add-form-card .form-control::placeholder {
+  color: #91A1B5;
+}
+
+/* Focus */
+
+.add-form-card .form-control:focus,
+.add-form-card .form-select:focus {
+  border-color: #43E6C2;
+  background-color: #172F42;
+  color: #F8FAFC;
+  box-shadow: 0 0 0 4px rgba(67, 230, 194, 0.16);
+  outline: none;
+}
+
+/* Sélection */
+
+.add-form-card .form-select {
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.add-form-card .form-select option {
+  background-color: #152A3B;
+  color: #F8FAFC;
+}
+
+/* Champs dates */
+
+.add-form-card input[type="date"] {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+/* Description */
+
+.add-form-card textarea.form-control {
+  min-height: 150px;
+  line-height: 1.65;
+  resize: vertical;
+}
+
+/* ===== ESPACEMENTS ===== */
+
+.add-form-card .mb-3 {
+  margin-bottom: 24px !important;
+}
+
+.add-form-card .mb-4 {
+  margin-bottom: 28px !important;
+}
+
+/* Indications sous les champs */
+
+.add-form-card .text-muted {
+  display: block;
+  margin-top: 8px;
+  color: #A9B8C9 !important;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ===== BOUTONS ===== */
+
+.add-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(67, 230, 194, 0.2);
+}
+
+.add-actions .btn {
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Ajouter l'offre */
+
+.add-actions .btn-success {
+  border: 1px solid #43E6C2;
+  background-color: #43E6C2;
+  color: #0B1220;
+}
+
+.add-actions .btn-success:hover {
+  transform: translateY(-2px);
+  border-color: #2CC9A7;
+  background-color: #2CC9A7;
+  color: #0B1220;
+}
+
+.add-actions .btn-success:active {
+  transform: translateY(0);
+}
+
+/* Annuler */
+
+.add-actions .btn-secondary {
+  border: 1px solid rgba(67, 230, 194, 0.35);
+  background-color: transparent;
+  color: #E2E8F0;
+}
+
+.add-actions .btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: #43E6C2;
+  background-color: rgba(67, 230, 194, 0.12);
+  color: #43E6C2;
+}
+
+/* Focus boutons */
+
+.add-actions .btn:focus-visible {
+  outline: 3px solid rgba(67, 230, 194, 0.35);
+  outline-offset: 3px;
+}
+
+/* Désactivé */
+
+.add-actions .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===== MESSAGE ERREUR ===== */
+
+.add-container .alert-danger {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  border-radius: 10px;
+  background-color: rgba(127, 29, 29, 0.24);
+  color: #FECACA;
+  font-size: 13px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .add-page {
+    padding: 36px 18px 50px;
+  }
+
+  .add-hero {
+    padding: 28px;
+  }
+
+  .add-form-card {
+    padding: 30px 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .add-page {
+    padding: 30px 16px;
+  }
+
+  .add-hero {
+    padding: 26px 24px;
+    border-radius: 17px;
+  }
+
+  .add-title {
+    font-size: 26px;
+  }
+
+  .add-form-card {
+    padding: 34px 24px;
+    border-radius: 17px;
+  }
+
+  .add-hero::before,
+  .add-form-card::before {
+    right: 24px;
+    left: 24px;
+  }
+
+  .add-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .add-actions .btn {
+    width: 100%;
+  }
+}

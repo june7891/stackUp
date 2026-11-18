@@ -62,6 +62,19 @@
   color: #0B1220;
 }
 
+.stackup-navbar .btn-user {
+  background-color: none;
+  color: #2CC9A7;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
 /* MENU MOBILE */
 
 .stackup-navbar .navbar-toggler {
