@@ -28,7 +28,6 @@ function App() {
           }
         />
         <Route path="/offre/:id" element={<OffreDetailsPage />} />
-        <Route path="/addOffre" element={<AddOffrePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

@@ -97,7 +97,7 @@ function LoginPage() {
 
         <div className="login-register">
           Pas encore de compte ?{" "}
-          <Link to="/inscription">
+          <Link to="/register">
             S'inscrire
           </Link>
         </div>
