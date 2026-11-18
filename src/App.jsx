@@ -20,9 +20,9 @@ function App() {
       <Routes>
         <Route path="/" element={<OffrePage />} />
         <Route
-          path="/add-offre"
+          path="/addOffre"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute allowedRoles={["admin"]}>
               <AddOffrePage />
             </ProtectedRoute>
           }
@@ -31,8 +31,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/offre/modifier/:id" element={<ProtectedRoute><UpdatePage /></ProtectedRoute>} />
-        <Route path="/candidate/:id" element={<ProtectedRoute><CandidatePage /></ProtectedRoute>} />
+        <Route path="/offre/modifier/:id" element={<ProtectedRoute allowedRoles={["admin"]}><UpdatePage /></ProtectedRoute>} />
+        <Route path="/candidate/:id" element={<ProtectedRoute allowedRoles={["candidat"]}><CandidatePage /></ProtectedRoute>} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
       </Routes>
       <BackToTop />

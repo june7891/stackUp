@@ -2,7 +2,7 @@
 import { Navigate } from "react-router";
 import { useAuth } from "../hooks/useAuth";
 
-function ProtectedRoute({ children }) {
+function ProtectedRoute({ children, allowedRoles = [] }) {
   const { user } = useAuth();
 
   // Utilisateur non connecté
@@ -10,12 +10,11 @@ function ProtectedRoute({ children }) {
     return <Navigate to="/login" replace />;
   }
 
-  // Utilisateur connecté mais pas admin
-  if (user.role !== "admin") {
+  // Vérification du rôle
+  if (!allowedRoles.includes(user.role)) {
     return <Navigate to="/" replace />;
   }
 
-  // Seul l'admin peut accéder à la page
   return children;
 }
 
