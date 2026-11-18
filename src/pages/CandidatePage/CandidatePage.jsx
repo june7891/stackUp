@@ -18,18 +18,11 @@ function CandidatePage() {
   
 
   const [motivation, setMotivation] = useState("");
-  const [cv, setCv] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    // Frontend uniquement
-    console.log("ID de l'offre :", id);
-    console.log("Utilisateur :", user);
-    console.log("Motivation :", motivation);
-    console.log("CV :", cv);
-
-    alert("Formulaire prêt ! L'envoi sera ajouté plus tard.");
+    setSubmitted(true);
   }
 
   return (
@@ -94,7 +87,10 @@ function CandidatePage() {
                 rows="6"
                 placeholder="Présentez votre parcours et vos motivations..."
                 value={motivation}
-                onChange={(e) => setMotivation(e.target.value)}
+                onChange={(e) => {
+                  setMotivation(e.target.value);
+                  setSubmitted(false);
+                }}
                 required
               />
             </div>
@@ -109,9 +105,9 @@ function CandidatePage() {
                 type="file"
                 className="form-control"
                 accept=".pdf,application/pdf"
-                onChange={(e) =>
-                  setCv(e.target.files?.[0] || null)
-                }
+                onChange={() => {
+                  setSubmitted(false);
+                }}
                 required
               />
             </div>
@@ -122,6 +118,12 @@ function CandidatePage() {
             >
               Envoyer ma candidature
             </button>
+
+            {submitted && (
+              <div className="postuler-success" role="status">
+                Votre candidature est envoyée.
+              </div>
+            )}
 
           </form>
         </div>
