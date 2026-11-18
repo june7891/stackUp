@@ -91,7 +91,8 @@ async function login(username, password) {
   const newUser = {
     username,
     email,
-    password
+    password,
+    role: "candidat"
   };
 
   const res = await fetch("http://localhost:3000/users", {

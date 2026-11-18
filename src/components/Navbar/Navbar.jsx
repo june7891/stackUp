@@ -58,7 +58,22 @@ function Navbar() {
                   </NavLink>
                 </li>
               </>
-            ) : (
+            ) : (<>
+              <li className="nav-item">
+                <button
+                  className="btn btn-user"
+                  type="button"
+                > Bonjour, {user.username} !
+                </button>
+              </li>
+              <li className="nav-item">
+                 <NavLink
+                    className="nav-link btn-connexion"
+                    to="/addOffre"
+                  >
+                    Ajouter une offre
+                  </NavLink>
+              </li>
               <li className="nav-item">
                 <button
                   className="btn btn-connexion"
@@ -68,6 +83,7 @@ function Navbar() {
                   Déconnexion
                 </button>
               </li>
+              </>
             )}
 
           </ul>

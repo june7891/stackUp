@@ -160,7 +160,7 @@
       "entreprise": "Thales",
       "localisation": "Mérignac",
       "type": "CDI",
-      "domaine": "DevOps",
+      "domaine": "Informatique",
       "description": "Automatisation des déploiements, gestion des pipelines CI/CD et supervision cloud.",
       "competences": [
         "Docker",
@@ -1126,7 +1126,15 @@
       "username": "AAAA",
       "email": "A@gmail.com",
       "password": "&é\"'(-è_çàazerty",
-      "id": "tm22I3JAGTw"
+      "id": "tm22I3JAGTw",
+      "role": "candidat"
+    },
+    {
+      "username": "testrole",
+      "email": "test@test.com",
+      "password": "123456789012",
+      "role": "candidat",
+      "id": "LtqPcwbaqMM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

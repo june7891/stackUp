@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router";
 import OffrePage from "./pages/OffrePage/OffrePage";
-import AddOffrePage from "./pages/AddOffrePage";
+import AddOffrePage from "./pages/AddOffrePage/AddOffrePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import OffreDetailsPage from "./pages/OffreDetailsPage/OffreDetailsPage";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -11,6 +11,7 @@ import CandidatePage from "./pages/CandidatePage/CandidatePage";
 import Footer from "./components/Footer/Footer";
 import BackToTop from "./components/BackToTop/BackToTop";
 import MentionsLegales from "./pages/MentionsLegales/MentionsLegales";
+
 
 function App() {
   return (
@@ -27,10 +28,11 @@ function App() {
           }
         />
         <Route path="/offre/:id" element={<OffreDetailsPage />} />
+        <Route path="/addOffre" element={<AddOffrePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/offre/modifier/:id" element={<UpdatePage />} />
+        <Route path="/offre/modifier/:id" element={<ProtectedRoute><UpdatePage /></ProtectedRoute>} />
         <Route path="/candidate/:id" element={<ProtectedRoute><CandidatePage /></ProtectedRoute>} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
       </Routes>
