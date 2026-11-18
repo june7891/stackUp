@@ -39,12 +39,7 @@ function Navbar() {
         >
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Accueil
-              </NavLink>
-            </li>
-
+            
             {!user ? (
               <>
                 <li className="nav-item">
@@ -58,7 +53,7 @@ function Navbar() {
                     className="nav-link btn-connexion"
                     to="/login"
                   >
-                    Login
+                    Connexion
                   </NavLink>
                 </li>
               </>
