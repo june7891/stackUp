@@ -6,9 +6,20 @@ export const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
 
   // Récupérer l'utilisateur sauvegardé
-  const [user, setUser] = useState(() => {
-    return localStorage.getItem("user");
-  });
+const [user, setUser] = useState(() => {
+  const savedUser = localStorage.getItem("user");
+
+  if (savedUser) {
+    try {
+      return JSON.parse(savedUser);
+    } catch (error) {
+      console.error("Erreur localStorage :", error);
+      return null;
+    }
+  }
+
+  return null;
+});
 
 async function login(username, password) {
   const response = await fetch("http://localhost:3000/users");
@@ -19,7 +30,7 @@ async function login(username, password) {
 
   const users = await response.json();
 
-  // Rechercher l'utilisateur correspondant
+  // Rechercher l'utilisateur
   const foundUser = users.find(
     (user) =>
       user.username === username &&
@@ -27,11 +38,22 @@ async function login(username, password) {
   );
 
   if (foundUser) {
-    // Enregistrer l'utilisateur connecté
-    setUser(foundUser.username);
+    // Objet utilisateur sans mot de passe
+    const connectedUser = {
+      id: foundUser.id,
+      username: foundUser.username,
+      email: foundUser.email,
+      role: foundUser.role
+    };
 
-    // Sauvegarder la connexion
-    localStorage.setItem("user", foundUser.username);
+    // Mettre à jour le Context
+    setUser(connectedUser);
+
+    // Sauvegarder dans localStorage
+    localStorage.setItem(
+      "user",
+      JSON.stringify(connectedUser)
+    );
 
     return true;
   }

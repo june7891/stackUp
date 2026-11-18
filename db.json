@@ -20,7 +20,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "Débutant accepté",
-      "statut": true
+      "statut": false
     },
     {
       "id": "2",
@@ -58,13 +58,14 @@
         "Git",
         "REST API"
       ],
-      "salaire": " 5000 € / mois",
+      "salaire": " 7000 € / mois",
       "datePublication": "2026-11-08",
       "dateLimite": "2026-12-01",
       "teletravail": "Non",
       "niveauEtude": "Bac+3 à Bac+5",
       "experience": "Débutant accepté",
-      "active": false
+      "active": false,
+      "statut": false
     },
     {
       "id": "4",
@@ -86,7 +87,7 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "1 à 2 ans",
-      "active": true
+      "statut": false
     },
     {
       "id": "5",
@@ -108,7 +109,7 @@
       "teletravail": "1 jour/semaine",
       "niveauEtude": "Bac+2",
       "experience": "2 ans",
-      "active": true
+      "statut": false
     },
     {
       "id": "6",
@@ -130,7 +131,7 @@
       "teletravail": "Non",
       "niveauEtude": "Bac+2",
       "experience": "Débutant accepté",
-      "active": false
+      "statut": false
     }
   ],
   "users": [
@@ -141,16 +142,18 @@
       "id": "ZxXJWG9OgTA"
     },
     {
-      "username": "Test",
-      "email": "test@gm.com",
-      "password": "K9s84LK@bKDemz8",
-      "id": "H9mUNulij60"
+      "id": "1",
+      "username": "admin",
+      "email": "admin@stackup.fr",
+      "password": "demo-admin",
+      "role": "admin"
     },
     {
-      "username": "Toto",
-      "email": "test1@gm.com",
-      "password": "TEST123456789",
-      "id": "9oDG8glb5L8"
+      "id": "2",
+      "username": "toto",
+      "email": "toto@example.com",
+      "password": "demo-candidat",
+      "role": "candidat"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
