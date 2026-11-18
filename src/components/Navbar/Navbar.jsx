@@ -1,8 +1,11 @@
-
 import { Link, NavLink } from "react-router";
+import { useAuth} from "../../hooks/useAuth"
 import "./Navbar.css";
 
-function Navbar({ isAuthenticated = false, onLogout }) {
+
+function Navbar() {
+
+    const { user, logout } = useAuth();
   return (
     <nav className="navbar navbar-expand-lg stackup-navbar">
       <div className="container">
@@ -42,10 +45,10 @@ function Navbar({ isAuthenticated = false, onLogout }) {
               </NavLink>
             </li>
 
-            {!isAuthenticated ? (
+            {!user ? (
               <>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/inscription">
+                  <NavLink className="nav-link" to="/register">
                     Inscription
                   </NavLink>
                 </li>
@@ -53,9 +56,9 @@ function Navbar({ isAuthenticated = false, onLogout }) {
                 <li className="nav-item">
                   <NavLink
                     className="nav-link btn-connexion"
-                    to="/connexion"
+                    to="/login"
                   >
-                    Connexion
+                    Login
                   </NavLink>
                 </li>
               </>
@@ -64,7 +67,7 @@ function Navbar({ isAuthenticated = false, onLogout }) {
                 <button
                   className="btn btn-connexion"
                   type="button"
-                  onClick={onLogout}
+                  onClick={logout}
                 >
                   Déconnexion
                 </button>

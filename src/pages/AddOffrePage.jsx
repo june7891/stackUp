@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { addProduct } from '../services/productService'
+import { addOffre } from '../services/offreService'
 
-function AddProductPage() {
+function AddOffrePage() {
   const [name, setName ] = useState('')
   const [description, setDescription ] = useState('')
   const [price, setPrice ] = useState('')
@@ -10,17 +10,14 @@ function AddProductPage() {
 function handleSubmit(e) {
   e.preventDefault()
 
-  const product = {
-    name, 
+  const offre = {
+    titre, 
     description, 
-    price: Number(price), 
     available: true,
-    image:'https://placehold.co/400x250/blue/white'
-
   }
   try {
-     const newProduct = addProduct(product)
-     console.log('Produit ajouté', newProduct)
+     const newOffre = addOffre(offre)
+     console.log('Produit ajouté', newOffre)
      alert('Produit ajouté avec succès')
     
   } catch (error) {
@@ -29,7 +26,7 @@ function handleSubmit(e) {
   }
 
  
-  console.log({name, description, price, image});
+
 
   
 }
@@ -37,7 +34,7 @@ function handleSubmit(e) {
   return (
     <>
     <div className="container mt-5 w-25">
-        <h3 className='mb-5'>Ajouter un produit</h3>
+        <h3 className='mb-5'>Ajouter une offre</h3>
         <form onSubmit={handleSubmit}>
   <div className="form-group mb-3 ">
 
@@ -57,17 +54,11 @@ function handleSubmit(e) {
     onChange={e => setDescription(e.target.value)} 
     placeholder="description"/>
   </div>
-  <div className="form-group mb-3">
+  
    
-    <input 
-    type="number" 
-    className="form-control" 
-      value={price} 
-    onChange={e => setPrice(e.target.value)} 
-     placeholder="prix"/>
-  </div>
+  
 
-  <button type="submit" className="btn btn-primary">Ajouter nouveau </button>
+  <button type="submit" className="btn btn-primary">Ajouter offre </button>
 </form>
     </div>
 
@@ -75,5 +66,5 @@ function handleSubmit(e) {
   )
 }
 
-export default AddProductPage
+export default AddOffrePage
 
