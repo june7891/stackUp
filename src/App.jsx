@@ -1,6 +1,6 @@
 
 import {Routes, Route, Navigate} from "react-router"
-import OffrePage from './pages/OffrePage'
+import OffrePage from './pages/OffrePage/OffrePage'
 import AddOffrePage from './pages/AddOffrePage'
 import LoginPage from "./pages/LoginPage/LoginPage"
 import OffreDetailsPage from "./pages/OffreDetailsPage"
