@@ -62,10 +62,10 @@ function OffreDetailsPage() {
                       
         }
 
-        async function handleUpdate(){
-          console.log("button update clic");
+        // async function handleUpdate(){
+        //   console.log("button update clic");
           
-        }
+        // }
    
   return (
   
@@ -101,7 +101,8 @@ function OffreDetailsPage() {
         Changer le statut de l'offre
       </button>
         <button className='btn btn-danger m-2' onClick={handleDelete}>Supprimer</button> 
-        <button className='btn btn-danger m-2' onClick={handleUpdate}>Modifier</button> </> 
+        <button className='btn btn-danger m-2' onClick={() => navigate(`/offre/modifier/${id}`)}>Modifier</button> </> 
+        // <button className='btn btn-danger m-2' onClick={navigate}>Modifier</button> </> 
         : <button>Postuler</button> }   
       
         </div>

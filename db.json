@@ -58,7 +58,7 @@
         "Git",
         "REST API"
       ],
-      "salaire": "700 € / mois",
+      "salaire": " 5000 € / mois",
       "datePublication": "2026-11-08",
       "dateLimite": "2026-12-01",
       "teletravail": "Non",
@@ -139,6 +139,18 @@
       "email": "toma.june@gmail.com",
       "password": "&é\"'(-è_çà&é",
       "id": "ZxXJWG9OgTA"
+    },
+    {
+      "username": "Test",
+      "email": "test@gm.com",
+      "password": "K9s84LK@bKDemz8",
+      "id": "H9mUNulij60"
+    },
+    {
+      "username": "Toto",
+      "email": "test1@gm.com",
+      "password": "TEST123456789",
+      "id": "9oDG8glb5L8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

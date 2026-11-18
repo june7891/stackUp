@@ -7,6 +7,7 @@ import OffreDetailsPage from "./pages/OffreDetailsPage"
 import ProtectedRoute from "./components/ProtectedRoute"
 import Navbar from "./components/Navbar/Navbar";
 import RegisterPage from "./pages/RegisterPage/RegisterPage"
+import UpdatePage from "./pages/UpdatePage/UpdatePage";
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
+        <Route path="/offre/modifier/:id" element={<UpdatePage />} />
       </Routes>
       
 
