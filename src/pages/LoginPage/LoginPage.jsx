@@ -12,16 +12,23 @@ function LoginPage() {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setError("");
+  async function handleSubmit(e) {
+  e.preventDefault();
+  setError("");
 
-    if (login(username, password)) {
+  try {
+    const success = await login(username, password);
+
+    if (success) {
       navigate("/");
     } else {
       setError("Nom d'utilisateur ou mot de passe incorrect.");
     }
+  } catch (error) {
+    console.error(error);
+    setError("Erreur lors de la connexion au serveur.");
   }
+}
 
   return (
     <main className="login-page">

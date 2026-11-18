@@ -10,19 +10,34 @@ export function AuthProvider({ children }) {
     return localStorage.getItem("user");
   });
 
-  function login(username, password) {
-    if (username === "toto" && password === "123456") {
+async function login(username, password) {
+  const response = await fetch("http://localhost:3000/users");
 
-      setUser(username);
-
-      // Sauvegarder la connexion
-      localStorage.setItem("user", username);
-
-      return true;
-    }
-
-    return false;
+  if (!response.ok) {
+    throw new Error("Erreur lors de la connexion");
   }
+
+  const users = await response.json();
+
+  // Rechercher l'utilisateur correspondant
+  const foundUser = users.find(
+    (user) =>
+      user.username === username &&
+      user.password === password
+  );
+
+  if (foundUser) {
+    // Enregistrer l'utilisateur connecté
+    setUser(foundUser.username);
+
+    // Sauvegarder la connexion
+    localStorage.setItem("user", foundUser.username);
+
+    return true;
+  }
+
+  return false;
+}
 
   function logout() {
     setUser(null);
