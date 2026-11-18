@@ -206,7 +206,9 @@ function OffrePage() {
         </div>
 
       </div>
+    
     </main>
+   
   );
 }
 
