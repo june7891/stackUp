@@ -11,12 +11,52 @@
 .offres-hero {
   position: relative;
   overflow: hidden;
+  display: flex;
+  min-height: 230px;
+  align-items: center;
   margin-bottom: 32px;
   padding: 40px 44px;
   border: 1px solid rgba(67, 230, 194, 0.3);
   border-radius: 20px;
   background: radial-gradient(ellipse at 95% 0%, rgba(67, 230, 194, 0.18), transparent 38%), #0B1220;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+  isolation: isolate;
+}
+
+.offres-hero-image {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  width: 58%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: offres-hero-image-enter 0.45s ease both;
+}
+
+.offres-hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(90deg, #0B1220 0%, rgba(11, 18, 32, 0.96) 35%, rgba(11, 18, 32, 0.35) 100%);
+  content: "";
+}
+
+.offres-hero-content {
+  max-width: 62%;
+}
+
+@keyframes offres-hero-image-enter {
+  from {
+    opacity: 0.4;
+    transform: scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .offres-eyebrow {
@@ -259,6 +299,19 @@
     padding: 30px 24px;
   }
 
+  .offres-hero-image {
+    width: 78%;
+    opacity: 0.7;
+  }
+
+  .offres-hero::after {
+    background: linear-gradient(90deg, #0B1220 0%, rgba(11, 18, 32, 0.88) 45%, rgba(11, 18, 32, 0.48) 100%);
+  }
+
+  .offres-hero-content {
+    max-width: 100%;
+  }
+
   .offres-sidebar {
     padding: 18px;
   }
@@ -273,6 +326,12 @@
   .offres-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 22px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .offres-hero-image {
+      animation: none;
+    }
   }
 
   .offres-sidebar {
