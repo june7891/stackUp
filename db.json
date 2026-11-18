@@ -42,6 +42,29 @@
       "teletravail": "Oui",
       "niveauEtude": "Bac+3",
       "experience": "Aucune expérience requise",
+      "active": true
+    },
+    {
+      "id": "3",
+      "titre": "Développeur Java",
+      "entreprise": "Thales",
+      "localisation": "Mérignac",
+      "type": "Stage",
+      "domaine": "Informatique",
+      "description": "Participation au développement d'applications backend et aux tests logiciels.",
+      "competences": [
+        "Java",
+        "Spring Boot",
+        "Git",
+        "REST API"
+      ],
+      "salaire": " 7000 € / mois",
+      "datePublication": "2026-11-08",
+      "dateLimite": "2026-12-01",
+      "teletravail": "Non",
+      "niveauEtude": "Bac+3 à Bac+5",
+      "experience": "Débutant accepté",
+      "active": false,
       "statut": false
     },
     {
