@@ -62,6 +62,10 @@ function OffreDetailsPage() {
                       
         }
 
+        async function handleUpdate(){
+          console.log("button update clic");
+          
+        }
    
   return (
   
@@ -94,9 +98,11 @@ function OffreDetailsPage() {
 
 
        {user ?<> <button className='btn btn-primary' onClick={() => handleAvailability(offre.statut)}>
-        Changer la disponibilité
+        Changer le statut de l'offre
       </button>
-        <button className='btn btn-danger m-2' onClick={handleDelete}>Supprimer le produit</button> </> : <div>pas connecté</div> }   
+        <button className='btn btn-danger m-2' onClick={handleDelete}>Supprimer</button> 
+        <button className='btn btn-danger m-2' onClick={handleUpdate}>Modifier</button> </> 
+        : <button>Postuler</button> }   
       
         </div>
    

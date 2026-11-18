@@ -47,11 +47,27 @@ export async function updateAvailability(id, newStatus) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ available: !newStatus }),
+    body: JSON.stringify({ statut: !newStatus }),
   });
 
   if (!response.ok) {
     throw new Error("Erreur lors de la mise à jour");
   }
+  return await response.json();
+}
+
+export async function updateOffre(id, updatedOffre) {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedOffre),
+  });
+
+  if (!response.ok) {
+    throw new Error("Erreur lors de la modification de l'offre");
+  }
+
   return await response.json();
 }
