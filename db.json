@@ -139,6 +139,12 @@
       "email": "toma.june@gmail.com",
       "password": "&é\"'(-è_çà&é",
       "id": "ZxXJWG9OgTA"
+    },
+    {
+      "username": "wafa",
+      "email": "ex@gmail.com",
+      "password": "1234567890AB",
+      "id": "4a5l_Q-bcNU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
