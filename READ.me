@@ -1,0 +1,102 @@
+# StackUp
+
+StackUp est une application web de recherche d'offres d'emploi. Elle permet de parcourir les annonces, de les rechercher et de les filtrer. Les candidats peuvent créer un compte et postuler. Un compte administrateur peut gérer les offres.
+
+## Fonctionnalités
+
+- Consulter les offres d'emploi et leurs détails.
+- Rechercher par intitulé, entreprise ou domaine.
+- Filtrer par domaine, niveau d'études, type de contrat et salaire.
+- Créer un compte candidat, se connecter et se déconnecter.
+- Postuler à une offre en renseignant une lettre de motivation.
+- Pour un administrateur : ajouter, modifier, activer/désactiver et supprimer des offres.
+- Accéder aux mentions légales.
+
+## Technologies
+
+- React 19 et Vite
+- React Router
+- Bootstrap 5
+- JSON Server pour l'API locale et les données de démonstration
+- Vitest et Testing Library pour les tests
+
+## Prérequis
+
+- Node.js et npm
+
+## Installation et lancement
+
+À la racine du projet, installe les dépendances :
+
+```bash
+npm install
+```
+
+L'application utilise deux serveurs. Lance-les dans deux terminaux distincts.
+
+Terminal 1 — API locale JSON Server, sur le port 3000 :
+
+```bash
+npm start
+```
+
+Terminal 2 — application Vite :
+
+```bash
+npm run dev
+```
+
+Ouvre ensuite l'adresse affichée par Vite dans le terminal (généralement `http://localhost:5173`). L'API JSON Server est disponible sur `http://localhost:3000`.
+
+## Comptes de démonstration
+
+Les comptes ci-dessous sont définis dans `db.json` :
+
+| Rôle | Identifiant | Mot de passe |
+|---|---|---|
+| Administrateur | `admin` | `demo-admin` |
+| Candidat | `toto` | `demo-candidat` |
+
+Ces identifiants sont réservés à la démonstration locale. Les mots de passe de l'application de démonstration sont stockés en clair dans le fichier de données ; ne réutilise pas ces paramètres pour un vrai service.
+
+## Routes de l'application
+
+| Adresse | Page |
+|---|---|
+| `/` | Liste des offres |
+| `/offre/:id` | Détails d'une offre |
+| `/login` | Connexion |
+| `/register` | Inscription |
+| `/candidate/:id` | Formulaire de candidature (candidat connecté) |
+| `/addOffre` | Ajouter une offre (administrateur) |
+| `/offre/modifier/:id` | Modifier une offre (administrateur) |
+| `/mentions-legales` | Mentions légales |
+
+## API locale
+
+JSON Server lit les données du fichier `db.json` et fournit notamment ces routes :
+
+- `GET /offres` : lister les offres ;
+- `GET /offres/:id` : consulter une offre ;
+- `POST /offres` : ajouter une offre ;
+- `PUT /offres/:id` et `PATCH /offres/:id` : modifier une offre ;
+- `DELETE /offres/:id` : supprimer une offre ;
+- `GET /users` et `POST /users` : consulter et créer des utilisateurs.
+
+L'adresse de l'API est actuellement inscrite directement dans le code (`http://localhost:3000`). Il faut donc démarrer JSON Server sur le port 3000 pour que la connexion, l'inscription et les offres fonctionnent.
+
+## Scripts disponibles
+
+```bash
+npm run dev       # Démarrer le serveur de développement Vite
+npm start         # Démarrer l'API JSON Server
+npm run build     # Générer la version de production dans dist/
+npm run preview   # Prévisualiser la version de production
+npm run lint      # Lancer Oxlint
+npm test          # Lancer les tests Vitest en mode interactif
+npm run test:run  # Lancer les tests Vitest une fois
+```
+
+## Données
+
+Les offres et les comptes de démonstration se trouvent dans `db.json`. JSON Server les lit au démarrage. Les opérations d'ajout, de modification et de suppression effectuées par l'application peuvent modifier ce fichier.
