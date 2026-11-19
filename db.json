@@ -1,4 +1,3 @@
-
 {
   "offres": [
     {
@@ -9,7 +8,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Développement et maintenance d'applications web avec React et Node.js.",
-      "competences": ["React", "Node.js", "JavaScript", "SQL"],
+      "competences": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "SQL"
+      ],
       "salaire": "35 000 - 42 000 € / an",
       "datePublication": "2026-11-10",
       "dateLimite": "2026-12-10",
@@ -26,7 +30,12 @@
       "type": "Alternance",
       "domaine": "Data",
       "description": "Analyse de données, création de tableaux de bord et exploitation de bases de données.",
-      "competences": ["Python", "SQL", "Power BI", "Excel"],
+      "competences": [
+        "Python",
+        "SQL",
+        "Power BI",
+        "Excel"
+      ],
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-12",
       "dateLimite": "2026-12-20",
@@ -43,7 +52,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Conception et développement d'API REST et de services métier avec Java et Spring Boot.",
-      "competences": ["Java", "Spring Boot", "PostgreSQL", "Git"],
+      "competences": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Git"
+      ],
       "salaire": "36 000 - 44 000 € / an",
       "datePublication": "2026-11-16",
       "dateLimite": "2027-01-15",
@@ -60,7 +74,12 @@
       "type": "CDI",
       "domaine": "Design",
       "description": "Conception d'interfaces utilisateur et amélioration de l'expérience utilisateur.",
-      "competences": ["Figma", "UI Design", "UX Research", "Prototypage"],
+      "competences": [
+        "Figma",
+        "UI Design",
+        "UX Research",
+        "Prototypage"
+      ],
       "salaire": "32 000 - 38 000 € / an",
       "datePublication": "2026-11-05",
       "dateLimite": "2026-12-15",
@@ -77,7 +96,12 @@
       "type": "CDI",
       "domaine": "Réseaux",
       "description": "Administration des serveurs, supervision des infrastructures et gestion des incidents.",
-      "competences": ["Linux", "Windows Server", "Réseaux", "Docker"],
+      "competences": [
+        "Linux",
+        "Windows Server",
+        "Réseaux",
+        "Docker"
+      ],
       "salaire": "30 000 - 36 000 € / an",
       "datePublication": "2026-11-14",
       "dateLimite": "2026-12-30",
@@ -94,7 +118,12 @@
       "type": "Alternance",
       "domaine": "Informatique",
       "description": "Développement d'interfaces web modernes et responsives.",
-      "competences": ["React", "TypeScript", "CSS", "Git"],
+      "competences": [
+        "React",
+        "TypeScript",
+        "CSS",
+        "Git"
+      ],
       "salaire": "Selon profil",
       "datePublication": "2026-11-15",
       "dateLimite": "2027-01-10",
@@ -111,7 +140,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Réalisation d'applications métier avec Angular et intégration de services REST.",
-      "competences": ["Angular", "TypeScript", "RxJS", "HTML"],
+      "competences": [
+        "Angular",
+        "TypeScript",
+        "RxJS",
+        "HTML"
+      ],
       "salaire": "34 000 - 41 000 € / an",
       "datePublication": "2026-11-17",
       "dateLimite": "2027-01-20",
@@ -126,9 +160,14 @@
       "entreprise": "Thales",
       "localisation": "Mérignac",
       "type": "CDI",
-      "domaine": "DevOps",
+      "domaine": "Informatique",
       "description": "Automatisation des déploiements, gestion des pipelines CI/CD et supervision cloud.",
-      "competences": ["Docker", "Kubernetes", "GitLab CI", "Linux"],
+      "competences": [
+        "Docker",
+        "Kubernetes",
+        "GitLab CI",
+        "Linux"
+      ],
       "salaire": "40 000 - 50 000 € / an",
       "datePublication": "2026-11-13",
       "dateLimite": "2027-01-12",
@@ -145,7 +184,12 @@
       "type": "CDD",
       "domaine": "Support informatique",
       "description": "Assistance aux utilisateurs, installation de postes et résolution des incidents.",
-      "competences": ["Windows", "Microsoft 365", "Active Directory", "ITIL"],
+      "competences": [
+        "Windows",
+        "Microsoft 365",
+        "Active Directory",
+        "ITIL"
+      ],
       "salaire": "25 000 - 29 000 € / an",
       "datePublication": "2026-11-09",
       "dateLimite": "2026-12-15",
@@ -162,7 +206,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Développement d'applications web et maintenance de plateformes PHP Symfony.",
-      "competences": ["PHP", "Symfony", "MySQL", "Docker"],
+      "competences": [
+        "PHP",
+        "Symfony",
+        "MySQL",
+        "Docker"
+      ],
       "salaire": "33 000 - 40 000 € / an",
       "datePublication": "2026-11-11",
       "dateLimite": "2026-12-28",
@@ -179,7 +228,12 @@
       "type": "CDI",
       "domaine": "Développement mobile",
       "description": "Création et évolution d'applications mobiles multiplateformes pour les clients.",
-      "competences": ["React Native", "Expo", "JavaScript", "Firebase"],
+      "competences": [
+        "React Native",
+        "Expo",
+        "JavaScript",
+        "Firebase"
+      ],
       "salaire": "35 000 - 43 000 € / an",
       "datePublication": "2026-11-08",
       "dateLimite": "2027-01-08",
@@ -196,7 +250,12 @@
       "type": "CDI",
       "domaine": "Cybersécurité",
       "description": "Analyse des vulnérabilités et sécurisation des systèmes d'information industriels.",
-      "competences": ["SIEM", "Linux", "Python", "Sécurité réseau"],
+      "competences": [
+        "SIEM",
+        "Linux",
+        "Python",
+        "Sécurité réseau"
+      ],
       "salaire": "42 000 - 52 000 € / an",
       "datePublication": "2026-11-16",
       "dateLimite": "2027-02-01",
@@ -213,7 +272,12 @@
       "type": "CDI",
       "domaine": "Data",
       "description": "Construction de pipelines de données et optimisation des traitements analytiques.",
-      "competences": ["Python", "Spark", "SQL", "Azure"],
+      "competences": [
+        "Python",
+        "Spark",
+        "SQL",
+        "Azure"
+      ],
       "salaire": "40 000 - 48 000 € / an",
       "datePublication": "2026-11-12",
       "dateLimite": "2027-01-15",
@@ -230,7 +294,12 @@
       "type": "Alternance",
       "domaine": "Informatique",
       "description": "Maintenance et évolution d'applications bancaires sur environnement mainframe.",
-      "competences": ["COBOL", "JCL", "DB2", "Mainframe"],
+      "competences": [
+        "COBOL",
+        "JCL",
+        "DB2",
+        "Mainframe"
+      ],
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-14",
       "dateLimite": "2027-01-31",
@@ -247,7 +316,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Développement de microservices et intégration de solutions de paiement.",
-      "competences": ["Java", "Spring Boot", "Kafka", "PostgreSQL"],
+      "competences": [
+        "Java",
+        "Spring Boot",
+        "Kafka",
+        "PostgreSQL"
+      ],
       "salaire": "38 000 - 46 000 € / an",
       "datePublication": "2026-11-17",
       "dateLimite": "2027-01-25",
@@ -264,7 +338,12 @@
       "type": "CDI",
       "domaine": "Qualité logicielle",
       "description": "Conception et automatisation des tests fonctionnels d'applications web.",
-      "competences": ["Selenium", "Cypress", "Jira", "Postman"],
+      "competences": [
+        "Selenium",
+        "Cypress",
+        "Jira",
+        "Postman"
+      ],
       "salaire": "30 000 - 37 000 € / an",
       "datePublication": "2026-11-07",
       "dateLimite": "2026-12-20",
@@ -281,7 +360,12 @@
       "type": "CDI",
       "domaine": "Gestion de projet",
       "description": "Pilotage de projets logiciels, suivi des budgets et coordination des équipes.",
-      "competences": ["Agile", "Scrum", "Jira", "Gestion de projet"],
+      "competences": [
+        "Agile",
+        "Scrum",
+        "Jira",
+        "Gestion de projet"
+      ],
       "salaire": "45 000 - 58 000 € / an",
       "datePublication": "2026-11-10",
       "dateLimite": "2027-01-15",
@@ -298,7 +382,12 @@
       "type": "CDI",
       "domaine": "Gestion de projet",
       "description": "Gestion du backlog produit et définition des priorités fonctionnelles.",
-      "competences": ["Scrum", "Jira", "User Stories", "Analyse fonctionnelle"],
+      "competences": [
+        "Scrum",
+        "Jira",
+        "User Stories",
+        "Analyse fonctionnelle"
+      ],
       "salaire": "40 000 - 48 000 € / an",
       "datePublication": "2026-11-15",
       "dateLimite": "2027-01-20",
@@ -315,7 +404,12 @@
       "type": "CDI",
       "domaine": "Cloud",
       "description": "Conception et administration d'infrastructures cloud sécurisées.",
-      "competences": ["AWS", "Terraform", "Docker", "Linux"],
+      "competences": [
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Linux"
+      ],
       "salaire": "42 000 - 52 000 € / an",
       "datePublication": "2026-11-18",
       "dateLimite": "2027-02-10",
@@ -332,7 +426,12 @@
       "type": "CDI",
       "domaine": "Base de données",
       "description": "Administration, sauvegarde et optimisation des bases de données relationnelles.",
-      "competences": ["Oracle", "PostgreSQL", "SQL", "Linux"],
+      "competences": [
+        "Oracle",
+        "PostgreSQL",
+        "SQL",
+        "Linux"
+      ],
       "salaire": "36 000 - 44 000 € / an",
       "datePublication": "2026-11-06",
       "dateLimite": "2027-01-10",
@@ -349,7 +448,12 @@
       "type": "CDI",
       "domaine": "Intelligence artificielle",
       "description": "Développement de modèles de machine learning pour applications industrielles.",
-      "competences": ["Python", "PyTorch", "Machine Learning", "Docker"],
+      "competences": [
+        "Python",
+        "PyTorch",
+        "Machine Learning",
+        "Docker"
+      ],
       "salaire": "43 000 - 55 000 € / an",
       "datePublication": "2026-11-13",
       "dateLimite": "2027-02-01",
@@ -366,7 +470,12 @@
       "type": "CDD",
       "domaine": "Informatique",
       "description": "Création de sites vitrines et e-commerce avec WordPress et WooCommerce.",
-      "competences": ["WordPress", "PHP", "Elementor", "WooCommerce"],
+      "competences": [
+        "WordPress",
+        "PHP",
+        "Elementor",
+        "WooCommerce"
+      ],
       "salaire": "28 000 - 34 000 € / an",
       "datePublication": "2026-11-11",
       "dateLimite": "2026-12-22",
@@ -383,7 +492,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Développement de plateformes web et API avec Django.",
-      "competences": ["Python", "Django", "PostgreSQL", "REST API"],
+      "competences": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "REST API"
+      ],
       "salaire": "34 000 - 42 000 € / an",
       "datePublication": "2026-11-09",
       "dateLimite": "2027-01-05",
@@ -400,7 +514,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Développement d'interfaces collaboratives avec Vue.js et TypeScript.",
-      "competences": ["Vue.js", "TypeScript", "Pinia", "CSS"],
+      "competences": [
+        "Vue.js",
+        "TypeScript",
+        "Pinia",
+        "CSS"
+      ],
       "salaire": "35 000 - 43 000 € / an",
       "datePublication": "2026-11-16",
       "dateLimite": "2027-01-30",
@@ -417,7 +536,12 @@
       "type": "CDI",
       "domaine": "ERP",
       "description": "Paramétrage et accompagnement des entreprises dans leurs projets SAP.",
-      "competences": ["SAP", "ERP", "SQL", "Analyse métier"],
+      "competences": [
+        "SAP",
+        "ERP",
+        "SQL",
+        "Analyse métier"
+      ],
       "salaire": "42 000 - 52 000 € / an",
       "datePublication": "2026-11-12",
       "dateLimite": "2027-02-05",
@@ -434,7 +558,12 @@
       "type": "CDI",
       "domaine": "Réseaux",
       "description": "Configuration des équipements réseau et maintenance des infrastructures.",
-      "competences": ["Cisco", "TCP/IP", "VPN", "Firewall"],
+      "competences": [
+        "Cisco",
+        "TCP/IP",
+        "VPN",
+        "Firewall"
+      ],
       "salaire": "36 000 - 45 000 € / an",
       "datePublication": "2026-11-15",
       "dateLimite": "2027-01-25",
@@ -451,7 +580,12 @@
       "type": "CDI",
       "domaine": "Cybersécurité",
       "description": "Supervision des alertes de sécurité et investigation des incidents.",
-      "competences": ["SIEM", "Splunk", "Réseaux", "Linux"],
+      "competences": [
+        "SIEM",
+        "Splunk",
+        "Réseaux",
+        "Linux"
+      ],
       "salaire": "32 000 - 40 000 € / an",
       "datePublication": "2026-11-17",
       "dateLimite": "2027-01-17",
@@ -468,7 +602,12 @@
       "type": "Alternance",
       "domaine": "Informatique",
       "description": "Intégration de maquettes graphiques et réalisation de pages web responsives.",
-      "competences": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "competences": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-18",
       "dateLimite": "2027-01-12",
@@ -485,7 +624,12 @@
       "type": "CDI",
       "domaine": "Gestion de projet",
       "description": "Animation des cérémonies agiles et accompagnement des équipes Scrum.",
-      "competences": ["Scrum", "Kanban", "Jira", "Coaching Agile"],
+      "competences": [
+        "Scrum",
+        "Kanban",
+        "Jira",
+        "Coaching Agile"
+      ],
       "salaire": "42 000 - 50 000 € / an",
       "datePublication": "2026-11-10",
       "dateLimite": "2027-01-18",
@@ -502,7 +646,12 @@
       "type": "CDI",
       "domaine": "Informatique",
       "description": "Conception d'applications métiers avec .NET et C#.",
-      "competences": ["C#", ".NET", "SQL Server", "Azure DevOps"],
+      "competences": [
+        "C#",
+        ".NET",
+        "SQL Server",
+        "Azure DevOps"
+      ],
       "salaire": "34 000 - 43 000 € / an",
       "datePublication": "2026-11-14",
       "dateLimite": "2027-01-22",
@@ -519,7 +668,12 @@
       "type": "CDI",
       "domaine": "Ingénierie mécanique",
       "description": "Conception de pièces et ensembles mécaniques pour applications aéronautiques.",
-      "competences": ["CATIA V5", "CAO", "RDM", "Mise en plan"],
+      "competences": [
+        "CATIA V5",
+        "CAO",
+        "RDM",
+        "Mise en plan"
+      ],
       "salaire": "38 000 - 47 000 € / an",
       "datePublication": "2026-11-15",
       "dateLimite": "2027-02-15",
@@ -536,7 +690,12 @@
       "type": "CDD",
       "domaine": "Ingénierie mécanique",
       "description": "Modélisation 3D de structures mécano-soudées et réalisation de plans de fabrication.",
-      "competences": ["SolidWorks", "Tôlerie", "Mécano-soudure", "Cotations"],
+      "competences": [
+        "SolidWorks",
+        "Tôlerie",
+        "Mécano-soudure",
+        "Cotations"
+      ],
       "salaire": "29 000 - 36 000 € / an",
       "datePublication": "2026-11-12",
       "dateLimite": "2027-01-10",
@@ -553,7 +712,12 @@
       "type": "CDI",
       "domaine": "Ingénierie mécanique",
       "description": "Dimensionnement de structures métalliques et réalisation de simulations mécaniques.",
-      "competences": ["ANSYS", "RDM", "Éléments finis", "SolidWorks"],
+      "competences": [
+        "ANSYS",
+        "RDM",
+        "Éléments finis",
+        "SolidWorks"
+      ],
       "salaire": "40 000 - 49 000 € / an",
       "datePublication": "2026-11-17",
       "dateLimite": "2027-02-05",
@@ -570,7 +734,12 @@
       "type": "CDI",
       "domaine": "Aéronautique",
       "description": "Étude et conception de composants de structures aéronautiques.",
-      "competences": ["CATIA V5", "3DEXPERIENCE", "Structures", "DMU"],
+      "competences": [
+        "CATIA V5",
+        "3DEXPERIENCE",
+        "Structures",
+        "DMU"
+      ],
       "salaire": "41 000 - 52 000 € / an",
       "datePublication": "2026-11-16",
       "dateLimite": "2027-02-20",
@@ -587,7 +756,12 @@
       "type": "CDI",
       "domaine": "Industrie",
       "description": "Optimisation des procédés de fabrication et rédaction des gammes de production.",
-      "competences": ["Lean Manufacturing", "CAO", "Excel", "Méthodes"],
+      "competences": [
+        "Lean Manufacturing",
+        "CAO",
+        "Excel",
+        "Méthodes"
+      ],
       "salaire": "30 000 - 37 000 € / an",
       "datePublication": "2026-11-08",
       "dateLimite": "2027-01-15",
@@ -604,7 +778,12 @@
       "type": "CDI",
       "domaine": "Électronique",
       "description": "Conception et validation de cartes électroniques pour systèmes embarqués.",
-      "competences": ["Altium Designer", "C", "Électronique", "Tests"],
+      "competences": [
+        "Altium Designer",
+        "C",
+        "Électronique",
+        "Tests"
+      ],
       "salaire": "39 000 - 48 000 € / an",
       "datePublication": "2026-11-13",
       "dateLimite": "2027-01-30",
@@ -621,7 +800,12 @@
       "type": "CDI",
       "domaine": "Systèmes embarqués",
       "description": "Développement de logiciels embarqués pour équipements automobiles.",
-      "competences": ["C", "C++", "Linux embarqué", "Git"],
+      "competences": [
+        "C",
+        "C++",
+        "Linux embarqué",
+        "Git"
+      ],
       "salaire": "36 000 - 46 000 € / an",
       "datePublication": "2026-11-11",
       "dateLimite": "2027-01-28",
@@ -638,7 +822,12 @@
       "type": "CDI",
       "domaine": "Robotique",
       "description": "Conception et programmation de solutions robotisées pour lignes industrielles.",
-      "competences": ["Robotique", "Automatisme", "Python", "SolidWorks"],
+      "competences": [
+        "Robotique",
+        "Automatisme",
+        "Python",
+        "SolidWorks"
+      ],
       "salaire": "38 000 - 47 000 € / an",
       "datePublication": "2026-11-14",
       "dateLimite": "2027-02-12",
@@ -655,7 +844,12 @@
       "type": "CDI",
       "domaine": "Automatisme",
       "description": "Programmation d'automates industriels et mise en service d'installations.",
-      "competences": ["Siemens TIA Portal", "PLC", "SCADA", "Électricité"],
+      "competences": [
+        "Siemens TIA Portal",
+        "PLC",
+        "SCADA",
+        "Électricité"
+      ],
       "salaire": "35 000 - 44 000 € / an",
       "datePublication": "2026-11-17",
       "dateLimite": "2027-02-10",
@@ -672,7 +866,12 @@
       "type": "CDI",
       "domaine": "Ingénierie mécanique",
       "description": "Simulation par éléments finis et validation de la résistance des structures.",
-      "competences": ["ANSYS", "Abaqus", "FEM", "RDM"],
+      "competences": [
+        "ANSYS",
+        "Abaqus",
+        "FEM",
+        "RDM"
+      ],
       "salaire": "39 000 - 48 000 € / an",
       "datePublication": "2026-11-18",
       "dateLimite": "2027-02-18",
@@ -689,7 +888,12 @@
       "type": "Alternance",
       "domaine": "Communication",
       "description": "Création de contenus web et animation des réseaux sociaux.",
-      "competences": ["Canva", "SEO", "Réseaux sociaux", "WordPress"],
+      "competences": [
+        "Canva",
+        "SEO",
+        "Réseaux sociaux",
+        "WordPress"
+      ],
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-12",
       "dateLimite": "2027-01-15",
@@ -706,7 +910,12 @@
       "type": "CDD",
       "domaine": "Communication",
       "description": "Gestion des communautés en ligne et création de campagnes digitales.",
-      "competences": ["Instagram", "LinkedIn", "Canva", "Analytics"],
+      "competences": [
+        "Instagram",
+        "LinkedIn",
+        "Canva",
+        "Analytics"
+      ],
       "salaire": "27 000 - 33 000 € / an",
       "datePublication": "2026-11-10",
       "dateLimite": "2026-12-30",
@@ -723,7 +932,12 @@
       "type": "CDI",
       "domaine": "Ressources humaines",
       "description": "Identification et accompagnement des candidats spécialisés en informatique.",
-      "competences": ["Recrutement", "LinkedIn Recruiter", "Entretiens", "Sourcing"],
+      "competences": [
+        "Recrutement",
+        "LinkedIn Recruiter",
+        "Entretiens",
+        "Sourcing"
+      ],
       "salaire": "30 000 - 38 000 € / an",
       "datePublication": "2026-11-16",
       "dateLimite": "2027-01-20",
@@ -740,7 +954,12 @@
       "type": "Alternance",
       "domaine": "Ressources humaines",
       "description": "Gestion administrative du personnel et participation aux recrutements.",
-      "competences": ["Excel", "Administration RH", "Communication", "Paie"],
+      "competences": [
+        "Excel",
+        "Administration RH",
+        "Communication",
+        "Paie"
+      ],
       "salaire": "Selon âge et niveau d'études",
       "datePublication": "2026-11-18",
       "dateLimite": "2027-01-18",
@@ -757,7 +976,12 @@
       "type": "CDI",
       "domaine": "Finance",
       "description": "Suivi des indicateurs financiers et analyse de la performance économique.",
-      "competences": ["Excel", "Power BI", "Finance", "SAP"],
+      "competences": [
+        "Excel",
+        "Power BI",
+        "Finance",
+        "SAP"
+      ],
       "salaire": "37 000 - 45 000 € / an",
       "datePublication": "2026-11-09",
       "dateLimite": "2027-01-12",
@@ -774,7 +998,12 @@
       "type": "CDI",
       "domaine": "Comptabilité",
       "description": "Gestion des opérations comptables et préparation des clôtures mensuelles.",
-      "competences": ["Comptabilité", "Sage", "Excel", "Fiscalité"],
+      "competences": [
+        "Comptabilité",
+        "Sage",
+        "Excel",
+        "Fiscalité"
+      ],
       "salaire": "30 000 - 38 000 € / an",
       "datePublication": "2026-11-13",
       "dateLimite": "2027-01-15",
@@ -791,7 +1020,12 @@
       "type": "CDI",
       "domaine": "Banque",
       "description": "Analyse des besoins métier et rédaction de spécifications fonctionnelles bancaires.",
-      "competences": ["SQL", "Agile", "UML", "Analyse fonctionnelle"],
+      "competences": [
+        "SQL",
+        "Agile",
+        "UML",
+        "Analyse fonctionnelle"
+      ],
       "salaire": "39 000 - 49 000 € / an",
       "datePublication": "2026-11-14",
       "dateLimite": "2027-02-01",
@@ -808,7 +1042,12 @@
       "type": "CDI",
       "domaine": "Banque",
       "description": "Accompagnement des clients et commercialisation de produits bancaires.",
-      "competences": ["Relation client", "Banque", "Vente", "Communication"],
+      "competences": [
+        "Relation client",
+        "Banque",
+        "Vente",
+        "Communication"
+      ],
       "salaire": "28 000 - 35 000 € / an",
       "datePublication": "2026-11-11",
       "dateLimite": "2027-01-10",
@@ -825,7 +1064,12 @@
       "type": "CDI",
       "domaine": "Marketing",
       "description": "Pilotage des campagnes publicitaires et optimisation du référencement web.",
-      "competences": ["SEO", "Google Ads", "GA4", "Emailing"],
+      "competences": [
+        "SEO",
+        "Google Ads",
+        "GA4",
+        "Emailing"
+      ],
       "salaire": "32 000 - 40 000 € / an",
       "datePublication": "2026-11-15",
       "dateLimite": "2027-01-25",
@@ -842,7 +1086,12 @@
       "type": "Stage",
       "domaine": "Informatique",
       "description": "Participation au développement d'une application web avec React et Spring Boot.",
-      "competences": ["React", "Java", "Spring Boot", "Git"],
+      "competences": [
+        "React",
+        "Java",
+        "Spring Boot",
+        "Git"
+      ],
       "salaire": "Gratification selon réglementation",
       "datePublication": "2026-11-18",
       "dateLimite": "2027-02-28",
@@ -852,8 +1101,6 @@
       "statut": false
     }
   ],
-
-
   "users": [
     {
       "username": "tomajune",
@@ -874,6 +1121,20 @@
       "email": "toto@example.com",
       "password": "demo-candidat",
       "role": "candidat"
+    },
+    {
+      "username": "AAAA",
+      "email": "A@gmail.com",
+      "password": "&é\"'(-è_çàazerty",
+      "id": "tm22I3JAGTw",
+      "role": "candidat"
+    },
+    {
+      "username": "testrole",
+      "email": "test@test.com",
+      "password": "123456789012",
+      "role": "candidat",
+      "id": "LtqPcwbaqMM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

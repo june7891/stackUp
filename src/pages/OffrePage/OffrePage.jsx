@@ -4,7 +4,19 @@ import { getOffres } from "../../services/offreService";
 import OffreCard from "../../components/OffreCard";
 import SearchBar from "../../components/SearchBar/SerachBar";
 import FilterBar from "../../components/FiltreBar/FiltreBar";
+import heroGeneral from "../../assets/offer-hero/general.jpg";
+import heroInformatique from "../../assets/offer-hero/informatique.jpg";
+import heroMarketing from "../../assets/offer-hero/marketing.jpg";
+import heroFinance from "../../assets/offer-hero/finance.jpg";
+import heroCommerce from "../../assets/offer-hero/commerce.jpg";
 import "./OffrePage.css";
+
+const heroImagesByDomain = {
+  Informatique: heroInformatique,
+  Marketing: heroMarketing,
+  Finance: heroFinance,
+  Commerce: heroCommerce
+};
 
 function getAnnualSalaryRange(salary) {
   const salaryText = String(salary ?? "");
@@ -95,6 +107,7 @@ function OffrePage() {
     indexPremiereOffre,
     indexDerniereOffre
   );
+  const heroImage = heroImagesByDomain[domaine] ?? heroGeneral;
 
   // 4. Revenir à la première page lors d'une recherche
   useEffect(() => {
@@ -106,11 +119,20 @@ function OffrePage() {
       <div className="container offres-container">
 
         <header className="offres-hero">
-          <p className="offres-eyebrow">STACKUP · OPPORTUNITÉS</p>
-          <h1>Bienvenue sur <span>StackUp</span></h1>
-          <p className="offres-intro">
-            Ton avenir professionnel commence ici
-          </p>
+          <img
+            key={heroImage}
+            className="offres-hero-image"
+            src={heroImage}
+            alt=""
+            aria-hidden="true"
+          />
+          <div className="offres-hero-content">
+            <p className="offres-eyebrow">STACKUP · OPPORTUNITÉS</p>
+            <h1>Bienvenue sur <span>StackUp</span></h1>
+            <p className="offres-intro">
+              Ton avenir professionnel commence ici
+            </p>
+          </div>
         </header>
 
         <div className="offres-layout">

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router";
 import { useAuth} from "../../hooks/useAuth"
 import "./Navbar.css";
+import logo from "../../assets/logo.webp"
 
 
 function Navbar() {
@@ -13,7 +14,7 @@ function Navbar() {
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img
-            src="src\assets\stackup-logo-navbar.png"
+            src={logo}
             alt="StackUp"
             className="stackup-logo"
           />
@@ -57,7 +58,24 @@ function Navbar() {
                   </NavLink>
                 </li>
               </>
-            ) : (
+            ) : (<>
+              <li className="nav-item">
+                <button
+                  className="btn btn-user"
+                  type="button"
+                > Bonjour, {user.username} !
+                </button>
+              </li>
+              {user?.role === "admin" && (
+  <li className="nav-item">
+    <NavLink
+      className="nav-link btn-connexion"
+      to="/addOffre"
+    >
+      Ajouter une offre
+    </NavLink>
+  </li>
+)}
               <li className="nav-item">
                 <button
                   className="btn btn-connexion"
@@ -67,6 +85,7 @@ function Navbar() {
                   Déconnexion
                 </button>
               </li>
+              </>
             )}
 
           </ul>
