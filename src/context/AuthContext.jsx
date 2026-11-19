@@ -22,7 +22,9 @@ const [user, setUser] = useState(() => {
 });
 
 async function login(username, password) {
-  const response = await fetch("http://localhost:3000/users");
+  const API_URL = `${
+  import.meta.env.VITE_API_URL || "http://localhost:3000"
+}/users`;
 
   if (!response.ok) {
     throw new Error("Erreur lors de la connexion");
